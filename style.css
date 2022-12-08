@@ -5,9 +5,10 @@
     --main-dark-blue: hsl(243, 87%, 12%);
     --main-desaturated-blue: hsl(238, 22%, 44%);
 
-    /*on hover*/
+    --btn-bright-blue: hsl(224, 93%, 58%);
 
-    --accent-bright-blue: hsl(224, 93%, 58%);
+    /*on hover*/
+    --accent-bright-blue: hsl(221, 100%, 71%);
     --accent-moderate-cyan: hsl(170, 45%, 43%);
 
 
@@ -132,3 +133,70 @@ nav{
     }
 }
 
+/*main section*/
+
+/*hero*/
+
+#hero{
+    margin-top: 5.38rem;
+    font-family: var(--ff);
+}
+
+.hero-content{
+    display: flex;
+    column-gap: .81rem;
+}
+
+.message{
+    width: 49%;
+    margin-top: 4.75rem;
+}
+
+h1{
+    line-height: 1.5;
+}
+.heading{
+    color: var(--main-dark-blue);
+    font-weight: var(--font-weight-700);
+    font-size: 2.5rem;
+}
+
+p{
+    font-weight: var(--font-weight-400);
+    line-height: 1.5rem;
+}
+
+.par{
+    margin-top: 0.94rem;
+    padding-right: 2.63rem;
+    font-size: 1.06rem;
+    letter-spacing: 0.53125px;
+}
+
+form{
+    margin-top: 1.56rem;
+}
+
+input[type = email]{
+    width: 320px;
+    height: 45px;
+    border: 1px solid var(--main-dark-blue);
+    border-radius: 3.13px;
+    padding-left: 1.31rem;
+    margin-right: 1rem;
+}
+
+input[type = button]{
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 3.13px;
+    background-color: var(--btn-bright-blue);
+    color: #FFF;
+    font-weight: var(--font-weight-700);
+    font-family: inherit;
+}
+
+.image{
+    width: 50%;
+}
