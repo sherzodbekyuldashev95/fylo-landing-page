@@ -142,14 +142,38 @@ nav{
     font-family: var(--ff);
 }
 
+@media only screen and (max-width: 500px){
+    #hero{
+        margin-top: 6.125rem;
+    }
+}
+
 .hero-content{
     display: flex;
     column-gap: .81rem;
 }
 
+@media only screen and (max-width: 1264px){
+    .hero-content{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+}
+
 .message{
     width: 49%;
     margin-top: 4.75rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-content{
+        max-width: 320px;
+    }
+
+    .message{
+        width: 100%;
+    }
 }
 
 h1{
@@ -161,10 +185,18 @@ h1{
     font-size: 2.5rem;
 }
 
+@media only screen and (max-width: 500px) {
+    .heading{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+}
+
 p{
     font-weight: var(--font-weight-400);
     line-height: 1.5rem;
-}
+    font-family: var(--ff-body);
+} /*here i didnt apply media query as they are the same in mobile and desktop*/
 
 .par{
     margin-top: 0.94rem;
@@ -173,8 +205,24 @@ p{
     letter-spacing: 0.53125px;
 }
 
+@media only screen and (max-width: 500px){
+    .par{
+        width: 97.4%;
+        margin: 0 auto;
+        padding-right: 0;
+        font-size: .875rem;
+        margin-top: 1.5rem;
+    }
+}
+
 form{
     margin-top: 1.56rem;
+}
+
+@media only screen and (max-width: 500px){
+    form{
+        margin-top: 2rem;
+    }
 }
 
 input[type = email]{
@@ -197,6 +245,24 @@ input[type = button]{
     font-family: inherit;
 }
 
+@media only screen and (max-width: 500px) {
+    input[type=email] {
+        margin-right: 0;
+    }
+
+    input[type=button] {
+        width: 320px;
+        margin-top: 1rem;
+    }
+}
+
 .image{
     width: 50%;
 }
+
+@media only screen and (max-width: 500px) {
+    .image{
+        width: 100%;
+    }
+}
+
