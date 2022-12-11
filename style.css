@@ -245,6 +245,11 @@ input[type = button]{
     font-family: inherit;
 }
 
+input[type=button]:hover{
+    background-color: var(--accent-bright-blue);
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 500px) {
     input[type=email] {
         margin-right: 0;
