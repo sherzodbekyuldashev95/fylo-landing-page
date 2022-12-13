@@ -11,6 +11,9 @@
     --accent-bright-blue: hsl(221, 100%, 71%);
     --accent-moderate-cyan: hsl(170, 45%, 43%);
 
+    /*error message color*/
+    --err-clr: hsla(343, 84%, 61%, 1);
+
 
     /*neutral*/
 
@@ -153,7 +156,7 @@ nav{
     column-gap: .81rem;
 }
 
-@media only screen and (max-width: 1264px){
+@media only screen and (max-width: 1239px){
     .hero-content{
         flex-direction: column-reverse;
         align-items: center;
@@ -248,6 +251,7 @@ input[type = button]{
 input[type=button]:hover{
     background-color: var(--accent-bright-blue);
     cursor: pointer;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
 }
 
 @media only screen and (max-width: 500px) {
@@ -271,3 +275,11 @@ input[type=button]:hover{
     }
 }
 
+/*color change when valid and invalid email entered*/
+ input[type=email]:invalid{
+    border-color: var(--err-clr);
+ }
+
+ input[type=email]:valid {
+     border-color: green;
+ }
