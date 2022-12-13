@@ -280,6 +280,6 @@ input[type=button]:hover{
     border-color: var(--err-clr);
  }
 
- input[type=email]:valid {
+ /* input[type=email]:valid {
      border-color: green;
- }
+ } */
