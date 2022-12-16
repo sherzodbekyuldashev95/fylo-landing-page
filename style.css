@@ -289,10 +289,13 @@ input[type=button]:hover{
 
  #demo{
     margin-top: 10.25rem;
-    /* background-image: url(images/bg-curve-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: ; */
-    background-color: var(--ntrl-light-grayish-blue);
+    background: url(images/bg-curve-desktop.svg) no-repeat;
+    background-size: 100% 178px;
+}
+
+.flex {
+    display: flex;
+    column-gap: 5.5rem;
 }
 
 .demo-info{
@@ -379,9 +382,10 @@ h2{
     bottom: 6px;
 }
 
-.flex {
-    display: flex;
-    column-gap: 5.5rem;
+.bg-color{
+    background-color: var(--ntrl-light-grayish-blue);
+    position: relative;
+    top: 178px;
 }
 
 img[src *= "illustration-2"]{
