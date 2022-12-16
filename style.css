@@ -449,6 +449,7 @@ img[src *= "illustration-2"]{
         width: 130px;
         margin: 0 auto;
         font-size: 0.75rem;
+        text-align: left;
     }
 
     .feedback {
