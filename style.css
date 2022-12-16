@@ -293,10 +293,18 @@ input[type=button]:hover{
     background-size: 100% 178px;
 }
 
-.flex {
+.flex-2 {
     display: flex;
     column-gap: 5.5rem;
 }
+
+@media only screen and (max-width: 1239px){
+    .flex-2{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
 
 .demo-info{
     width: 50.8%;
@@ -307,11 +315,13 @@ h2{
     margin-bottom: 2.375rem;
 }
 
+
 .par-2{
     width: 81.6%;
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
 
 .link{
     width: 166px;
@@ -381,6 +391,7 @@ h2{
 }
 
 
+
 .info .name{
     font-size: 0.69rem;
     font-weight: var(--font-weight-700);
@@ -405,4 +416,97 @@ h2{
 img[src *= "illustration-2"]{
     display: block;
     width: 42.34%;
+}
+
+@media screen and (max-width: 500px) {
+    #demo {
+        margin-top: 5.625rem;
+        background: url(images/bg-curve-desktop.svg) no-repeat;
+        background-size: 100% 50px;
+    }
+
+    .demo-info {
+        width: 85.3%;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 5.44rem 0 0.875rem 0;
+        line-height: 1.5;
+    }
+
+    h2.heading {
+        font-size: 1rem;
+    }
+
+    .par-2 {
+        width: 100%;
+        font-size: 0.875rem;
+        margin-bottom: 1.625rem;
+    }
+
+    .link {
+        width: 130px;
+        margin: 0 auto;
+        font-size: 0.75rem;
+    }
+
+    .feedback {
+        margin-top: 2.5rem;
+        width: 280px;
+        padding: 1.5rem 0.8rem 1.164rem 1.62rem;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
+        border-radius: 5px;
+        margin-bottom: 5.06rem;
+        text-align: left;
+    }
+
+    img[src *="quotes"] {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+    }
+
+    .person-info {
+        margin-top: 0;
+    }
+
+    .person-img {
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+    }
+
+    .par-3 {
+        margin-top: 0rem;
+        font-size: 0.625rem;
+        line-height: 1.8;
+        letter-spacing: 0.38px;
+        text-align: left;
+    }
+
+    .info .name {
+        font-size: 0.56rem;
+        font-weight: var(--font-weight-700);
+        letter-spacing: 0.45px;
+        color: var(--main-dark-blue);
+        margin-top: 10px;
+    }
+
+    .info .position {
+        font-size: 0.375rem;
+        letter-spacing: 0.3px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .bg-color {
+        top: 50px;
+    }
+
+    img[src *="illustration-2"] {
+        display: block;
+        width: 100%;
+    }
 }
