@@ -426,7 +426,7 @@ img[src *= "illustration-2"]{
     }
 
     .demo-info {
-        width: 85.3%;
+        width: 100%;
         text-align: center;
     }
 
@@ -452,13 +452,12 @@ img[src *= "illustration-2"]{
     }
 
     .feedback {
-        margin-top: 2.5rem;
+        margin: 2.5rem auto 5.06rem;
         width: 280px;
         padding: 1.5rem 0.8rem 1.164rem 1.62rem;
         background: #FFFFFF;
         box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
         border-radius: 5px;
-        margin-bottom: 5.06rem;
         text-align: left;
     }
 
