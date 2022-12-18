@@ -246,7 +246,8 @@ input[type = button]{
     background-color: var(--btn-bright-blue);
     color: #FFF;
     font-weight: var(--font-weight-700);
-    font-family: inherit;
+    font-family: var(--ff);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
 }
 
 input[type=button]:hover{
@@ -510,4 +511,56 @@ img[src *= "illustration-2"]{
         display: block;
         width: 100%;
     }
+}
+
+/*call-to-action section*/
+
+#call-to-action{
+    position: relative;
+    top: 175px;
+    background: var(--main-desaturated-blue);
+    color: #FFF;
+}
+
+.flex-3{
+    display: flex;
+    column-gap: 14.2rem;
+}
+
+.cta-info{
+    margin: 6.25rem 0 5.31rem;
+    width: 41.6%;
+}
+
+.cta-info h2{
+    font-size: 2rem;
+    font-family: var(--ff);
+    line-height: 1.5;
+    font-weight: var(--font-weight-700);
+    margin-bottom: 1.06rem;
+}
+
+.cta-info p {
+    letter-spacing: 0.5px;
+}
+
+#cta-email{
+    margin-top: 7rem;
+}
+
+#cta-email input[type= email]{
+    width: 480px;
+    height: 48px;
+    margin: 0 0 1rem;
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border: none;
+}
+
+#cta-email input[type = button] {
+    height: 48px;
+    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+}
+
+#cta-email ::placeholder{
+    color: var(--ntrl-light-gray);
 }
