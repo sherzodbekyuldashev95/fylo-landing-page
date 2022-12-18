@@ -416,6 +416,7 @@ h2{
 img[src *= "illustration-2"]{
     display: block;
     width: 42.34%;
+    height: 32%;
 }
 
 @media screen and (max-width: 500px) {
