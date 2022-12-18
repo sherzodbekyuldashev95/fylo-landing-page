@@ -563,4 +563,61 @@ img[src *= "illustration-2"]{
 
 #cta-email ::placeholder{
     color: var(--ntrl-light-gray);
+    font-size: 0.75rem ;
+}
+
+/*mobile version of cta section*/
+
+@media only screen and (max-width: 1239px) {
+    .flex-3 {
+        flex-direction:column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #call-to-action {
+        position: relative;
+        top: 51px;
+        text-align: center;
+    }
+
+    .cta-info {
+        margin: 3.375rem 0 0 0;
+        width: 85.6%;
+    }
+
+    .cta-info h2 {
+        font-size: 1.125rem;
+        margin: 0 0 1rem;
+    }
+
+    .cta-info p {
+        font-size: 0.875rem;
+        letter-spacing: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    #cta-email {
+        margin: 0;
+    }
+
+    #cta-email input[type=email] {
+        width: 240px;
+        height: 32px;
+        margin: 0 0 0.5rem;
+        box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+        border: none;
+    }
+
+    #cta-email input[type=button] {
+        width: 240px;
+        height: 32px;
+        box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+        margin: 0 0 4.44rem;
+    }
+
+    #cta-email ::placeholder {
+        font-size: 0.625rem;
+    }
 }
