@@ -673,9 +673,46 @@ img[src *= "illustration-2"]{
     row-gap: 1rem;
 }
 
+.footer-info ul li:hover, .footer-info .tel-email .tel:hover, .footer-info .tel-email .email:hover{
+    color: var(--accent-bright-blue);
+}
+
 .smn{
     margin: 2rem 0 2.625rem;
     display: flex;
     column-gap: 0.615rem;
     justify-content: center;
+}
+
+/*desctop version of footer*/
+
+@media only screen and (min-width: 500px) {
+    #footer{
+        background: var(--main-dark-blue);
+        position: relative;
+        top: 175px;
+        color: #FFF;
+        height: 391px;
+    }
+
+    #footer a img[src *= logo-2]{
+        display: inline-block;
+        margin: 5.75rem 0 2.25rem;
+        width: 135px;
+        height: 39px;
+    }
+
+    .footer-info{
+        display: grid;
+        grid-template-columns: 310px 75px 85px 120px;
+        justify-content: space-between;
+    }
+
+    .footer-info ul{
+        margin: 0;
+    }
+    
+    .smn{
+        margin: 0;
+    }
 }
